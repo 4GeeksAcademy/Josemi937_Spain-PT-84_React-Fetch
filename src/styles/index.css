@@ -10,3 +10,95 @@
     import 'relative/path/to/stylesheet.scss';
 
 */
+body {
+    
+	background-image: url("https://t3.ftcdn.net/jpg/05/09/85/40/360_F_509854035_W21rTwRsVVAgNq9djRvaqiUSciX1px8K.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	height: 100vh;
+    -webkit-mask-image: url("https://ucarecdn.com/9514f9b1-3bf9-4b7c-b31d-9fb8cd6af8bf/");
+    mask-image: url("https://ucarecdn.com/9514f9b1-3bf9-4b7c-b31d-9fb8cd6af8bf/");
+}
+
+p{
+    font-family: monaco, monospace;
+    color: rgb(246, 244, 244);
+    border-top-left-radius: 37px 140px;
+    border-top-right-radius: 23px 130px;
+    border-bottom-left-radius: 110px 19px;
+    border-bottom-right-radius: 120px 24px;
+    border: thick double rgb(135, 171, 15);
+   background-color: rgb(7, 90, 7);
+ 
+}
+.form-control:focus {
+    border-color: inherit;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+
+.list {
+    font-family: monaco, monospace;
+    color: rgb(246, 244, 244);
+    border-top-left-radius: 37px 140px;
+    border-top-right-radius: 23px 130px;
+    border-bottom-left-radius: 110px 19px;
+    border-bottom-right-radius: 120px 24px;
+    border: thick double rgb(135, 171, 15);
+   background-color: rgb(7, 90, 7);
+
+}
+
+.container {
+    margin-top: 30px;
+    font-family: monaco, monospace;
+    color: rgb(244, 238, 238);
+    font-family: sans-serif;
+}
+
+h1 {
+    font-family: monaco, monospace;
+    font-size: 75px;
+    color: transparent;
+  -moz-text-stroke-width: 2px;
+  -webkit-text-stroke-width: 2px;
+  -moz-text-stroke-color: #000000;
+  -webkit-text-stroke-color: #ffffff;
+  text-shadow: 7px 7px #99b761;
+}
+
+
+.pending {
+    background-color: rgb(240 241 245);
+    border-top-right-radius: 23px 130px;
+    border-bottom-left-radius: 110px 19px;
+    border-bottom-right-radius: 120px 24px;
+    border: thick double rgb(135, 171, 15);
+    font-family: monaco, monospace;
+    background-color: rgb(7, 90, 7);
+}
+button {
+    font-family: monaco, monospace;
+    font-size: 25px;
+    color: transparent;
+  -moz-text-stroke-width: 2px;
+  -webkit-text-stroke-width: 2px;
+  -moz-text-stroke-color: #000000;
+  -webkit-text-stroke-color: #ffffff;
+  text-shadow: 7px 7px #99b761;
+  border: thick double rgb(135, 171, 15);
+  background-color: transparent;
+  border-top-left-radius: 37px 140px;
+  border-top-right-radius: 23px 130px;
+  border-bottom-left-radius: 110px 19px;
+  border-bottom-right-radius: 120px 24px;
+  background-color: rgb(7, 90, 7);
+  margin-top: 5px;
+}
+button:hover {
+    color: rgba(255, 255, 255, 1) !important;
+    box-shadow: 0 4px 16px rgb(242, 243, 244);
+    transition: all 0.2s ease;
+  }
+  
