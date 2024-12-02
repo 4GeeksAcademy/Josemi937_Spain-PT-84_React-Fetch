@@ -95,6 +95,7 @@ const Home = () => {
   }
 
   useEffect(() => {
+    getTodos(); 
   }, []);
 
   return (
