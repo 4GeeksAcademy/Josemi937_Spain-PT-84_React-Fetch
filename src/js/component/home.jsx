@@ -6,10 +6,35 @@ const Home = () => {
   const [newEntry, setNewEntry] = useState('');
   const [todoList, setToDoList] = useState([]);
   const [estate, setEstado] = useState(false);
+  const [userName] = useState('Josemi937');
   const ammountDutties = todoList.length;
 
   
-
+  function createUserIfNotExists() {
+    fetch(`https://playground.4geeks.com/todo/users/${userName}`)
+      .then((response) => {
+        if (response.ok) {
+          return response.json(); 
+        } else {
+          return fetch(`https://playground.4geeks.com/todo/users/${userName}`, {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ username: userName })
+          })
+            .then((response) => response.json())
+            .then((data) => {
+              console.log("User created:", data);
+            })
+            .catch((err) => console.error("Error creating user:", err));
+        }
+      })
+      .then((data) => {
+        console.log("User data fetched:", data);
+      })
+      .catch((err) => console.error("Error fetching user:", err));
+  }
   function getTodos() {
     fetch("https://playground.4geeks.com/todo/users/Josemi937")
       .then((response) => response.json())
